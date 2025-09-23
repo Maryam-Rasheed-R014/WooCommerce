@@ -8,11 +8,11 @@ import downArrow from "../../assets/images/Vector 11.svg";
 import { Icon } from "@iconify/react";
 import { useNavigate } from "react-router";
 const Navbar = () => {
-   let navigate = useNavigate();
+  let navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
-  const toggleMenu=() =>{
-  setIsOpen(!isOpen);
-  }
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <nav>
       <div className=" container-fluid md:container mx-auto flex items-center  justify-between   py-4 px-6">
@@ -24,13 +24,19 @@ const Navbar = () => {
           <a
             href="#about"
             className="font-Manrope text-[15px] leading-[15px] tracking-[0.5%] text-center  hover:text-blue-400"
+             onClick={() => {
+                navigate("/products");
+              }}
           >
             Shop
           </a>
           <a
             href="#agents"
             className="font-Manrope text-[15px] leading-[15px] tracking-[0.5%] text-center hover:text-blue-400"
-          >
+               onClick={() => {
+                navigate("/feature");
+              }}
+             >
             Service
           </a>
           <a
@@ -57,17 +63,29 @@ const Navbar = () => {
           <div className="hidden sm:flex font-bold sn">
             <p>R100,00</p>
           </div>
-          <div className="relative" >
-          <Icon icon="proicons:cart" width="40" height="40"   />
-          <p className="absolute bottom-5 left-6 border-2 rounded-2xl px-2 text-small">1</p>
+          <div className="relative">
+            <Icon icon="proicons:cart" width="40" height="40" />
+            <p className="absolute bottom-5 left-6 border-2 rounded-2xl px-2 text-small">
+              1
+            </p>
           </div>
           <div>
-            <img className="w-6 h-6" src={frame} alt=""  onClick={() => {
+            <img
+              className="w-6 h-6"
+              src={frame}
+              alt=""
+              onClick={() => {
                 navigate("/createAccount");
-              }}/>
+              }}
+            />
           </div>
           <div>
-            <img className=" md:hidden block w-6 h-6" src={hammer} alt=""    onClick={toggleMenu}/>
+            <img
+              className=" md:hidden block w-6 h-6"
+              src={hammer}
+              alt=""
+              onClick={toggleMenu}
+            />
           </div>
         </div>
       </div>
