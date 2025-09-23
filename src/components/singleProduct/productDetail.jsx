@@ -45,14 +45,14 @@ export default function ProductDetail() {
             </button>
           </div>
           <hr  className="border-2 text-gray-300 my-5 "/>
-          <div className="flex justify-between md:flex-row flex-col pl-5">
+          <div className="flex justify-between lg:flex-row flex-col pl-5 gap-2">
             <p className="text-xl font-semibold">SKU:<span className="text-[#2F8EFF]">product-sku</span> </p>
             <p className="text-xl font-semibold">Categories:<span className="text-[#2F8EFF]"> Product Category</span> </p>
             <p className="text-xl font-semibold">Tag:<span className="text-[#2F8EFF]"> Product Tag</span> </p>
           </div>
           
           <hr  className="border-2 text-gray-300 my-5 "/>
-          <div className="flex gap-3 mb-5 pl-5">
+          <div className="flex  gap-3 mb-5 pl-5">
             <Icon icon="material-symbols:share" width="30" height="30" /><span className="ml-2 text-xl">share:</span>
             <Icon className=" border-5 rounded-2xl p-1" icon="streamline-logos:facebook-logo-2-solid" width="30" height="30" />
             <Icon className=" border-5 rounded-2xl p-1" icon="iconoir:whatsapp" width="30" height="30" /> 
