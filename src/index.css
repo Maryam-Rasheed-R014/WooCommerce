@@ -1,0 +1,52 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Manrope', sans-serif;
+}
+
+.ant-checkbox-wrapper{
+  width: fit-content !important;
+}
+.ant-checkbox-label{
+  font-size: 12px !important;
+  font-family: 'Outfit', sans-serif !important;
+  padding:0px 0px 0px 10px  !important;
+}
+.ant-checkbox-inner{
+  width: 30px !important;
+height: 30px !important;
+background: transparent !important;
+border:2px solid #000 !important;
+border-radius: 10% !important;
+
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: black !important;
+  border-color: black !important;
+  color: #000;
+}
+
+.ant-checkbox-checked::after {
+  border-color:black !important;
+}
+.ant-btn-variant-outlined{
+  border-color: black !important;
+  color: #000 !important;
+}
+.ant-input-outlined{
+  border-radius: 0px;
+  border-width: 2px;
+  border-color: #000;
+  width: 100% !important;
+}
+.ant-input-outlined:hover{
+    border-color: #000 !important;
+}
+.ant-input-affix-wrapper{
+  min-width: 100% !important
+}
