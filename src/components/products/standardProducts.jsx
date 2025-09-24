@@ -47,7 +47,7 @@ export default function StandardProducts() {
       image: exampleIcon,
     },
     {
-      id: 3,
+      id: 5,
       name: "Product Title",
       price: "R100,00 ",
       des: "Lorem ipsum dolor sit amet consectetur sociis et.",
@@ -55,7 +55,7 @@ export default function StandardProducts() {
     },
 
     {
-      id: 3,
+      id: 6,
       name: "Product Title",
       price: "R100,00",
       des: "Lorem ipsum dolor sit amet consectetur sociis et.",

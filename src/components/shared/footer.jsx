@@ -60,7 +60,7 @@ export default function Footer() {
             </ul></div>
           </div>
         </div>
-     <hr class="border-t-2 border-gray-300 " />
+     <hr className="border-t-2 border-gray-300 " />
      <div className="contact container max-w-[85%] mx-auto grid grid-cols-1 gap-3 sm:gap-5 sm:grid-cols-5 py-3">
       <div className="theme col-span-2"><p className="text-white text-sm">© LSX Theme</p></div>
       <div className="privicy col-span-2"><p className="text-white text-sm">Privacy Policy-Terms & Conditions</p></div>

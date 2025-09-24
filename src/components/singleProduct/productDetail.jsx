@@ -1,8 +1,9 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 import product from "../../assets/icons/Layer_1.svg";
-
+import { useNavigate } from "react-router";
 export default function ProductDetail() {
+    let navigate = useNavigate();
   return (
     <>
       <div className="grid lg:grid-cols-2  grid-cols-1 container mx-auto gap-5 mb-5">
@@ -40,7 +41,9 @@ export default function ProductDetail() {
           </div>
           <div className="flex mt-10 gap-3 pl-5 ">
             <p className="border-2 px-7 text-center flex items-center">1</p>
-            <button className="bg-[#2F8EFF] text-white py-4 px-10 text-2xl">
+            <button className="bg-[#2F8EFF] text-white py-4 px-10 text-2xl"   onClick={() => {
+                    navigate("/cart");
+                  }}>
               Add to basket
             </button>
           </div>

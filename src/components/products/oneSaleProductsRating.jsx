@@ -39,7 +39,7 @@ export default function OneSaleProductsRating() {
       image: exampleIcon,
     },
     {
-      id: 3,
+      id: 5,
       name: "On Sale Product",
       price: "R200,00",
 
@@ -47,7 +47,7 @@ export default function OneSaleProductsRating() {
       image: exampleIcon,
     },
     {
-      id: 4,
+      id: 6,
       name: "Product Title",
       price: "R200,00",
    
@@ -55,7 +55,7 @@ export default function OneSaleProductsRating() {
       image: exampleIcon,
     },
     {
-      id: 3,
+      id: 7,
       name: "On Sale Product",
       price: "R200,00",
 
@@ -64,7 +64,7 @@ export default function OneSaleProductsRating() {
     },
 
     {
-      id: 3,
+      id: 8,
       name: "On Sale Product",
       price: "R200,00",
 

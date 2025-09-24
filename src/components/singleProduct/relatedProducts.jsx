@@ -37,10 +37,10 @@ export default function RelatedProducts() {
   ];
 
   return (
-    <div className="sm:max-w-[50%] mx-auto px-5">
+    <div className="container mx-auto px-5 ">
       <h3 className="font-semibold text-xl mb-4">Related Products</h3>
 
-      <div className="grid sm:grid-cols-2 grid-cols-1 gap-4">
+      <div className="grid sm:grid-cols-3 grid-cols-1 gap-4">
         {products.map((product) => (
           <div
             key={product.id}

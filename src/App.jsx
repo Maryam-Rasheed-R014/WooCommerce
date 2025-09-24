@@ -9,6 +9,7 @@ import Review from "./pages/review";
 import SingleProduct from "./pages/singleProduct";
 import CreateAccount from "./pages/createAccount";
 import LostPassword from "./pages/lostPassword";
+import Cart from "./pages/cart";
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
         <Route path="/singleProduct" element={<SingleProduct />} />
         <Route path="/createAccount" element={<CreateAccount />} />
         <Route path="/lostPassword" element={<LostPassword/>} />
-        <Route path="/pass" element={<LostPassword/>} />
+        <Route path="/cart" element={<Cart/>} />
+       
       </Routes>
       <Footer />
     </BrowserRouter>

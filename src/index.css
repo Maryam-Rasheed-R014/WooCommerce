@@ -1,28 +1,26 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-*{
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
   box-sizing: border-box;
 }
 body {
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
-.ant-checkbox-wrapper{
+.ant-checkbox-wrapper {
   width: fit-content !important;
 }
-.ant-checkbox-label{
+.ant-checkbox-label {
   font-size: 12px !important;
-  font-family: 'Outfit', sans-serif !important;
-  padding:0px 0px 0px 10px  !important;
+  font-family: "Outfit", sans-serif !important;
+  padding: 0px 0px 0px 10px !important;
 }
-.ant-checkbox-inner{
+.ant-checkbox-inner {
   width: 30px !important;
-height: 30px !important;
-background: transparent !important;
-border:2px solid #000 !important;
-border-radius: 10% !important;
-
+  height: 30px !important;
+  background: transparent !important;
+  border: 2px solid #000 !important;
+  border-radius: 10% !important;
 }
 
 .ant-checkbox-checked .ant-checkbox-inner {
@@ -32,21 +30,52 @@ border-radius: 10% !important;
 }
 
 .ant-checkbox-checked::after {
-  border-color:black !important;
+  border-color: black !important;
 }
-.ant-btn-variant-outlined{
+.ant-btn-variant-outlined {
   border-color: black !important;
   color: #000 !important;
 }
-.ant-input-outlined{
+.ant-input-outlined {
   border-radius: 0px;
   border-width: 2px;
   border-color: #000;
   width: 100% !important;
 }
-.ant-input-outlined:hover{
-    border-color: #000 !important;
+.ant-input-outlined:hover {
+  border-color: #000 !important;
 }
-.ant-input-affix-wrapper{
-  min-width: 100% !important
+.ant-input-affix-wrapper {
+  min-width: 100% !important;
+}
+.ant-table-wrapper table {
+  border-width: 2px !important;
+  border-color: #000 !important ;
+  border-bottom: none !important;
+  border-radius: 0%;
+  margin: 0px !important;
+}
+.ant-table-thead > tr > th {
+  background-color: rgb(84, 83, 83) !important;
+  border-radius: 0% !important;
+  color: white !important;
+  font-size: 16px !important
+  ;
+   border-width: 1px !important;
+  border-color: #000 !important ;
+  border-radius: 0%;
+  margin:  0px !important
+}
+th.ant-table-cell::before{
+  background-color:rgb(84, 83, 83) !important;
+}
+
+
+.ant-table-tbody > tr > td {
+  border-bottom: 2px solid black !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+.ant-table-cell{
+  padding: 5px 2px 5px 0px !important;
 }

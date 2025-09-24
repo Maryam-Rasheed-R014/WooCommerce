@@ -38,7 +38,7 @@ export default function OneSaleProducts() {
       image: exampleIcon,
     },
     {
-      id: 3,
+      id: 5,
       name: "On Sale Product",
       preprice: "R200,00",
       newprice: "R100,00",
@@ -46,7 +46,7 @@ export default function OneSaleProducts() {
       image: exampleIcon,
     },
     {
-      id: 4,
+      id: 5,
       name: "Product Title",
       preprice: "R200,00",
       newprice: "R100,00",
@@ -54,7 +54,7 @@ export default function OneSaleProducts() {
       image: exampleIcon,
     },
     {
-      id: 3,
+      id: 6,
       name: "On Sale Product",
       preprice: "R200,00",
       newprice: "R100,00",
@@ -62,14 +62,7 @@ export default function OneSaleProducts() {
       image: exampleIcon,
     },
 
-    {
-      id: 3,
-      name: "On Sale Product",
-      preprice: "R200,00",
-      newprice: "R100,00",
-      des: "Lorem ipsum dolor sit amet consectetur sociis et.",
-      image: exampleIcon,
-    },
+  
   ];
 
   return (

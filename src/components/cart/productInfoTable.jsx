@@ -1,0 +1,89 @@
+import React from "react";
+import { Input, Table } from "antd";
+import exapmleImg from "../../assets/icons/Layer_1.svg";
+import { Icon } from "@iconify/react";
+const ProductInfoTable = () => {
+  const cartdata = [
+    {
+      id: 1,
+      name: "LSX Mega Menus",
+      price: 100,
+      quantity: 1,
+      subtotal: 100,
+      image: exapmleImg,
+    },
+    {
+      id: 2,
+      name: "LSX Testimonials",
+      price: 100,
+      quantity: 1,
+      subtotal: 100,
+      image: exapmleImg,
+    },
+    {
+      id: 3,
+      name: "LSX Testimonials",
+      price: 300,
+      quantity: 3,
+      subtotal: 900,
+      image: exapmleImg,
+    },
+  ];
+
+  const columns = [
+    {
+      title: "Product",
+      dataIndex: "name",
+      key: "product",
+      render: (text, record) => (
+        <div className="flex md:flex-row flex-col items-center md:gap-8 gap-3 my-2">
+          <Icon icon="twemoji:cross-mark" width="15" height="15" />
+          <div>
+            <img src={record.image} alt="" className="sm:w-10  w-8 sm:h-10 h-8 bg-black" />
+          </div>
+          <div className="text-center">{record.name}</div>
+        </div>
+      ),
+    },
+    { title: "Price", dataIndex: "price", key: "price" },
+    {
+      title: "Quantity",
+      dataIndex: "quantity",
+      key: "quantity",
+      render: (text, record) => (
+        <div className="flex items-center ">
+          <div className="px-4 py-2 border-2">{record.quantity}</div>
+        </div>
+      ),
+    },
+    { title: "Subtotal", dataIndex: "subtotal", key: "subtotal" },
+  ];
+
+  return (
+    <>
+      <Table 
+        columns={columns}
+        dataSource={cartdata}
+        rowClassName="!border-b-2 !border-black "
+        pagination={false}
+      size="large"
+        
+      />
+
+      <div className="flex md:flex-row flex-col p-4 border-2 !border-t-0 justify-between">
+        <div className="flex py-2">
+          <Input className="!border-black !border-r-0 " />
+          <button className="bg-[#2F8EFF] text-white w-[50%] ">
+            Apply Coupon{" "}
+          </button>
+        </div>
+        <div className="">
+          {" "}
+         <button className="bg-[#2F8EFF] text-white py-5 px-10  md:w-auto w-full">Update basket</button>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default ProductInfoTable;
