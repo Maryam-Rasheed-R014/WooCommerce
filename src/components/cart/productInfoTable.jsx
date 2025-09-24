@@ -36,7 +36,7 @@ const ProductInfoTable = () => {
       dataIndex: "name",
       key: "product",
       render: (text, record) => (
-        <div className="flex md:flex-row flex-col items-center md:gap-8 gap-3 my-2">
+        <div className="flex md:flex-row flex-col items-center md:gap-8 gap-4 my-5 ml-3">
           <Icon icon="twemoji:cross-mark" width="15" height="15" />
           <div>
             <img src={record.image} alt="" className="sm:w-10  w-8 sm:h-10 h-8 bg-black" />

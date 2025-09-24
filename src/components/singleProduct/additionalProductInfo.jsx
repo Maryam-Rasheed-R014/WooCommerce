@@ -5,7 +5,7 @@ import TextArea from "antd/es/input/TextArea";
 export default function AdditionalProductInfo() {
   return (
     <>
-      <ul className="flex sm:flex-row justify-evenly container mx-auto px-5 mt-10">
+      <ul className="flex sm:flex-row justify-evenly container mx-auto px-5 sm:pt-15 pt-5">
         <li className="sm:text-xl text-small font-semibold sm:block hidden  ">Description</li>
         <li className="sm:text-xl text-small font-semibold sm:block hidden ">Additional Details</li>
         <li className="text-xl font-semibold">Reviews (1)</li>
