@@ -55,7 +55,7 @@ export default function ProductDetail() {
           </div>
           
           <hr  className="border-2 text-gray-300 my-5 "/>
-          <div className="flex gap-3 mb-5 pl-5 sm:block hidden">
+          <div className="sm:flex gap-3 mb-5 pl-5 hidden">
             <Icon icon="material-symbols:share" width="30" height="30" /><span className="ml-2 text-xl">share:</span>
             <Icon className=" border-5 rounded-2xl p-1" icon="streamline-logos:facebook-logo-2-solid" width="30" height="30" />
             <Icon className=" border-5 rounded-2xl p-1" icon="iconoir:whatsapp" width="30" height="30" /> 
