@@ -35,7 +35,7 @@ const ProceedCheckout = () => {
   ];
   return (
     <>
-      <div className="flex md:flex-row flex-col-reverse flex-col gap-10 my-15">
+      <div className="flex md:flex-row flex-col-reverse  gap-10 my-15">
         <div>
           <h3 className="text-3xl font-semibold px-2 pb-5">You may be interested in…</h3>
           <div className="grid   grid-cols-2">
@@ -85,7 +85,7 @@ const ProceedCheckout = () => {
                 <p>R200,00</p>
               </div>
             </div>
-            <div className="flex  md:gap-5 gap-5 px-10 border-b-2 py-7 justify-around ">
+            <div className="flex md:flex-row flex-col  md:gap-5  px-10 border-b-2 py-7 justify-around ">
            
                 <div className=" md:w-[45%] w-full"><p>Shipping</p></div>
              
@@ -110,7 +110,9 @@ const ProceedCheckout = () => {
              <div className="w-full"><p>R200,00</p></div> 
             </div>
           </div>
-          <button className=" bg-[#FF7A00] text-white text-xl text-center w-full my-3 py-7">Proceed to checkout</button>
+          <button className=" bg-[#FF7A00] text-white text-xl text-center w-full my-3 py-7"  onClick={() => {
+                navigate("/checkout");
+              }}>Proceed to checkout</button>
         </div>
       </div>
     </>

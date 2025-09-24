@@ -79,3 +79,29 @@ th.ant-table-cell::before{
 .ant-table-cell{
   padding: 5px 2px 5px 0px !important;
 }
+.contactInfo .ant-input-outlined{
+  border-radius: 3px;
+  height: 50px !important;
+
+}
+.contactInfo .ant-input-outlined:focus-within{
+  border-color: black !important;
+}
+
+
+
+.ant-radio-group p{
+  background: red;
+  width: 100% !important;
+  border-bottom:  1px solid gray;
+}
+.ant-radio-wrapper{
+display: flex !important;
+
+}
+.ant-radio-label{
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+}

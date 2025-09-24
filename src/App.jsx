@@ -10,6 +10,7 @@ import SingleProduct from "./pages/singleProduct";
 import CreateAccount from "./pages/createAccount";
 import LostPassword from "./pages/lostPassword";
 import Cart from "./pages/cart";
+import Checkout from "./pages/checkout";
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
         <Route path="/createAccount" element={<CreateAccount />} />
         <Route path="/lostPassword" element={<LostPassword/>} />
         <Route path="/cart" element={<Cart/>} />
-       
+        <Route path="/checkout" element={<Checkout/>} />
       </Routes>
       <Footer />
     </BrowserRouter>

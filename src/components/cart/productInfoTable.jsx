@@ -63,6 +63,7 @@ const ProductInfoTable = () => {
     <>
       <Table 
         columns={columns}
+        scroll={{ x: 800 }}
         dataSource={cartdata}
         rowClassName="!border-b-2 !border-black "
         pagination={false}
