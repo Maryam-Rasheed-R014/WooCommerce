@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Checkbox, Input, Select, Radio } from "antd";
+import {Table } from "antd";
 import TextArea from "antd/es/input/TextArea";
 import { useNavigate } from "react-router";
 const handleChange = (value) => {
@@ -13,6 +14,39 @@ const BillingDetails = () => {
   const onChange = (e) => {
     setValue(e.target.value);
   };
+const cartdata = [
+    {
+      id: 1,
+      product: "LSX Mega Menus",
+      price: 100,
+      quantity: 1,
+      subtotal: 100,
+    
+    },
+    {
+      id: 2,
+      product: "LSX Testimonials",
+      price: 100,
+      quantity: 1,
+      subtotal: 100,
+     
+    },
+    {
+      id: 3,
+      product: "LSX Testimonials",
+      price: 300,
+      quantity: 3,
+      subtotal: 900,
+
+    },
+  ];
+
+  const columns = [
+   
+    { title: "Product", dataIndex: "product", key: "product" },
+  
+    { title: "Subtotal", dataIndex: "subtotal", key: "subtotal" },
+  ];
 
   return (
     <>
@@ -149,52 +183,17 @@ const BillingDetails = () => {
       {/* Order Section */}
       <h3 className="text-2xl font-semibold mb-5">Your order</h3>
 
-      <div className="border-2 border-b-0 mb-10">
-        <div className="bg-[#50575E] text-white font-semibold flex justify-between">
-          <div className="w-full p-5 border-r-2 border-black">
-            <h4>Product</h4>
-          </div>
-          <div className="w-full p-5">
-            <h4>Subtotal</h4>
-          </div>
-        </div>
-
-        <div className="flex justify-between border-b-2 border-black">
-          <div className="w-full p-5">
-            <h4>LSX Mega Menus x 1</h4>
-          </div>
-          <div className="w-full p-5">
-            <h4>R100,00</h4>
-          </div>
-        </div>
-
-        {/* Shipping */}
-        <div className="flex justify-between border-b-2 border-black">
-          <div className="w-full flex items-center">
-            <h4 className="p-5">Shipping</h4>
-          </div>
-          <div className="w-full py-5 px-4">
-            <Radio.Group
-              onChange={onChange}
-              value={value}
-              style={{ display: "flex", flexDirection: "column", gap: "8px" }}
-            >
-              <Radio value={6}>Free shipping</Radio>
-              <Radio value={7}>Local pickup</Radio>
-              <Radio value={8}>Flat rate: R50</Radio>
-            </Radio.Group>
-          </div>
-        </div>
-
-        <div className="flex justify-between border-b-2 border-black">
-          <div className="w-full p-5">
-            <h4>Total</h4>
-          </div>
-          <div className="w-full p-5">
-            <h4>R100,00</h4>
-          </div>
-        </div>
-      </div>
+      <Table 
+            columns={columns}
+            scroll={{ x: 400 }}
+            dataSource={cartdata}
+            rowClassName="!border-b-2 !border-black "
+            pagination={false}
+          size="
+        
+          "
+            
+          />
 
       {/* Payment Options */}
       <div className="w-full py-5 px-4 bg-[#EBE9EB]">
