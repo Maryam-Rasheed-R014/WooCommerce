@@ -11,6 +11,8 @@ import CreateAccount from "./pages/createAccount";
 import LostPassword from "./pages/lostPassword";
 import Cart from "./pages/cart";
 import Checkout from "./pages/checkout";
+import Billing from "./pages/billing";
+import OrderRecieved from "./pages/orderRecieved";
 
 function App() {
   return (
@@ -26,6 +28,9 @@ function App() {
         <Route path="/lostPassword" element={<LostPassword/>} />
         <Route path="/cart" element={<Cart/>} />
         <Route path="/checkout" element={<Checkout/>} />
+         <Route path="/billing" element={<Billing/>} />
+         <Route path="/orderRecieved" element={<OrderRecieved/>
+        } />
       </Routes>
       <Footer />
     </BrowserRouter>

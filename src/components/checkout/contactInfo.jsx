@@ -42,7 +42,7 @@ const ContactInfo = () => {
       <h2 className="text-3xl font-semibold ">Checkout</h2>
 
       {/* ----------------contact info-------------------- */}
-      <div className="flex md:flex-row flex-col gap-5 mt-5">
+      <div className="flex md:flex-row flex-col md:gap-15 gap-5 mt-5">
         <div className=" w-full contactInfo">
           {/* --------------------------1------------------------------ */}
           <div>
@@ -99,38 +99,48 @@ const ContactInfo = () => {
               3. Shipping options
             </h4>
             <div className="flex justify-between border-2 p-5 rounded-md mb-7 ">
-            <Radio.Group
-  style={{ display: "flex", flexDirection: "column", gap: 8, width: "100% " }}
-  onChange={onChange}
-  value={value}
-  className="w-full"
->
-  <Radio value={1} className="w-full border-b  border-gray-300 !pb-3 block">
-    <div className="flex justify-between w-full">
-      <span className="text-sm">Free shipping</span>
-      <span>R0,00</span>
-    </div>
-  </Radio>
+              <Radio.Group
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: 8,
+                  width: "100% ",
+                }}
+                onChange={onChange}
+                value={value}
+                className="w-full"
+              >
+                <Radio
+                  value={1}
+                  className="w-full border-b  border-gray-300 !pb-3 block"
+                >
+                  <div className="flex justify-between w-full">
+                    <span className="text-sm">Free shipping</span>
+                    <span>R0,00</span>
+                  </div>
+                </Radio>
 
-  <Radio value={2} className="w-full border-b  border-gray-300 !pb-3 block">
-    <div className="flex justify-between w-full">
-      <span className="text-sm">Local pickup</span>
-      <span>R50,00</span>
-    </div>
-  </Radio>
+                <Radio
+                  value={2}
+                  className="w-full border-b  border-gray-300 !pb-3 block"
+                >
+                  <div className="flex justify-between w-full">
+                    <span className="text-sm">Local pickup</span>
+                    <span>R50,00</span>
+                  </div>
+                </Radio>
 
-   <Radio value={3} className="w-full border-b  border-gray-300 !pb-3 block">
-    <div className="flex justify-between w-full">
-      <span className="text-sm">Flat rate</span>
-      <span>R100,00</span>
-    </div>
-  </Radio>
-</Radio.Group>
-
-
-
+                <Radio
+                  value={3}
+                  className="w-full border-b  border-gray-300 !pb-3 block"
+                >
+                  <div className="flex justify-between w-full">
+                    <span className="text-sm">Flat rate</span>
+                    <span>R100,00</span>
+                  </div>
+                </Radio>
+              </Radio.Group>
             </div>
-             
           </div>
           {/* ----------------------4------------------------ */}
           <div>
@@ -139,13 +149,39 @@ const ContactInfo = () => {
             </h4>
             <div className="flex justify-between border-2 p-5 rounded-md mb-7 ">
               <Radio.Group
-                style={{ display: "flex", flexDirection: "column", gap: 8, width: "100% " }}
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: 8,
+                  width: "100% ",
+                }}
                 onChange={onChange}
                 value={value}
                 options={[
-                  { value: 1, label: "Direct bank transfer", style: { borderBottom: "1px solid #d1d5db", paddingBottom: "8px" }  },
-                  { value: 2, label: "Cheque payments"  , style: { borderBottom: "1px solid #d1d5db", paddingBottom: "8px" }},
-                  { value: 3, label: "Cash on delivery",  style: { borderBottom: "1px solid #d1d5db", paddingBottom: "8px" } },
+                  {
+                    value: 1,
+                    label: "Direct bank transfer",
+                    style: {
+                      borderBottom: "1px solid #d1d5db",
+                      paddingBottom: "8px",
+                    },
+                  },
+                  {
+                    value: 2,
+                    label: "Cheque payments",
+                    style: {
+                      borderBottom: "1px solid #d1d5db",
+                      paddingBottom: "8px",
+                    },
+                  },
+                  {
+                    value: 3,
+                    label: "Cash on delivery",
+                    style: {
+                      borderBottom: "1px solid #d1d5db",
+                      paddingBottom: "8px",
+                    },
+                  },
                 ]}
               />
             </div>
@@ -164,8 +200,8 @@ const ContactInfo = () => {
                 Privacy Policy
               </span>{" "}
             </p>
-            <div className="flex justify-between gap-5 border-gray-600 py-5 ">
-              <div className=" w-full flex flex-row justify-center items-center gap-3  border py-5">
+            <div className="flex  flex-col lg:flex-row   justify-between gap-5 border-gray-600 py-5 ">
+              <div className="flex w-full justify-center items-center gap-3  border py-5">
                 {" "}
                 <Icon
                   icon="material-symbols-light:arrow-back-rounded"
@@ -173,8 +209,8 @@ const ContactInfo = () => {
                   height="30"
                 />
                 <button
-                  className=" text-xl"
-                  onClick={() => {
+                  className=" text-xl "
+                  onClick ={() => {
                     navigate("/cart");
                   }}
                 >
@@ -182,7 +218,9 @@ const ContactInfo = () => {
                   Return to Basket
                 </button>
               </div>
-              <button className=" py-5 text-xl w-full bg-[#FF7A00]">
+              <button className=" py-5 text-xl w-full bg-[#FF7A00]" onClick={() => {
+                    navigate("/billing");
+                  }}>
                 Place Order
               </button>
             </div>

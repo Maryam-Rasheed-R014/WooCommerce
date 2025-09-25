@@ -81,16 +81,16 @@ const ProceedCheckout = () => {
               <div className=" md:w-[40%] w-full">
                 <p>Subtotal</p>
               </div>
-              <div className="w-full">
+              <div className="w-full pl-5">
                 <p>R200,00</p>
               </div>
             </div>
-            <div className="flex md:flex-row flex-col  md:gap-5  px-10 border-b-2 py-7 justify-around ">
+            <div className="flex  flex-col sm:flex-row   gap-5  px-10 border-b-2 py-7 justify-around ">
            
                 <div className=" md:w-[45%] w-full"><p>Shipping</p></div>
              
               <div className="w-full">
-                <Radio.Group className="space-y-3"
+                <Radio.Group className="space-y-3 "
                   style={style}
                   onChange={onChange}
                   value={value}
@@ -107,7 +107,7 @@ const ProceedCheckout = () => {
             </div>
             <div className="flex md:gap-5 gap-5 px-10  justify-around py-7">
              <div className=" md:w-[45%] w-full"><p>Total</p></div> 
-             <div className="w-full"><p>R200,00</p></div> 
+             <div className="w-full pl-3"><p>R200,00</p></div> 
             </div>
           </div>
           <button className=" bg-[#FF7A00] text-white text-xl text-center w-full my-3 py-7"  onClick={() => {

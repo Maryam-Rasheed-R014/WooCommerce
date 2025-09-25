@@ -69,15 +69,21 @@ body {
 th.ant-table-cell::before{
   background-color:rgb(84, 83, 83) !important;
 }
-
+.order .ant-table-cell:first-child{
+    border-right: 2px solid black !important;
+}
 
 .ant-table-tbody > tr > td {
   border-bottom: 2px solid black !important;
-  font-size: 14px !important;
+  font-size: 16px !important;
+  text-align: center;
   font-weight: 500 !important;
 }
-.ant-table-cell{
+
+.order .ant-table-cell{
   padding: 5px 2px 5px 0px !important;
+
+ 
 }
 .contactInfo .ant-input-outlined{
   border-radius: 3px;
@@ -88,12 +94,17 @@ th.ant-table-cell::before{
   border-color: black !important;
 }
 
-
+.ant-radio-wrapper {
+  align-items: flex-start !important; /* stick radio button to the top */
+}
+.ant-radio-label{
+  font-size: 16px !important;
+}
 
 .ant-radio-group p{
-  background: red;
-  width: 100% !important;
-  border-bottom:  1px solid gray;
+  background: #DFDCDE !important;
+ 
+
 }
 .ant-radio-wrapper{
 display: flex !important;
@@ -104,4 +115,25 @@ display: flex !important;
   display: flex !important;
   flex-direction: row !important;
   justify-content: space-between !important;
+}
+/* .ant-select-focused{
+  border: 2px solid black !important;
+  border-radius: 0px !important;
+
+} */
+
+.billing .ant-select-selector {
+  background: var(--gray-prime) !important;
+  border: 2px solid black !important;
+  height: 45px !important;
+ 
+  border-radius: 0px !important;
+}
+
+.billing .ant-input-outlined {
+height: 45px;
+
+}
+.ant-table-wrapper .ant-table-thead >tr>th{
+  text-align: center !important;
 }
