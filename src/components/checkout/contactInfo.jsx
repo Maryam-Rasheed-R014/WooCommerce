@@ -5,6 +5,7 @@ import { Radio } from "antd";
 import { Icon } from "@iconify/react";
 import exampleIcon from "../../assets/icons/Layer_1.svg";
 import { useNavigate } from "react-router";
+import Button from "../shared/button";
 const style = {
   display: "flex",
   flexDirection: "column",
@@ -201,28 +202,19 @@ const ContactInfo = () => {
               </span>{" "}
             </p>
             <div className="flex  flex-col lg:flex-row   justify-between gap-5 border-gray-600 py-5 ">
-              <div className="flex w-full justify-center items-center gap-3  border py-5">
+             
                 {" "}
-                <Icon
-                  icon="material-symbols-light:arrow-back-rounded"
-                  width="30"
-                  height="30"
-                />
-                <button
-                  className=" text-xl "
-                  onClick ={() => {
+            
+                <Button text="Return to Basket" className="returnToBasketButton !text-black" icon="ic:baseline-arrow-back"
+                
+                iconClass={' w-[30px] h-[30px]'} 
+                  onClick={() => {
                     navigate("/cart");
-                  }}
-                >
-                  {" "}
-                  Return to Basket
-                </button>
-              </div>
-              <button className=" py-5 text-xl w-full bg-[#FF7A00]" onClick={() => {
-                    navigate("/billing");
-                  }}>
-                Place Order
-              </button>
+                  }}/>
+         
+              <Button text ="Place Order " className="contactInfoButton2"   onClick={() => {
+                  navigate("/billing"); 
+                }}/>
             </div>
           </div>
         </div>

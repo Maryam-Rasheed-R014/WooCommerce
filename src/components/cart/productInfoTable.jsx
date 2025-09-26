@@ -2,6 +2,7 @@ import React from "react";
 import { Input, Table } from "antd";
 import exapmleImg from "../../assets/icons/Layer_1.svg";
 import { Icon } from "@iconify/react";
+import Button from "../shared/button";
 const ProductInfoTable = () => {
   const cartdata = [
     {
@@ -74,15 +75,15 @@ const ProductInfoTable = () => {
       />
 
       <div className="flex md:flex-row flex-col p-4 border-2 !border-t-0 justify-between">
-        <div className="flex py-2">
-          <Input className="!border-black !border-r-0 " />
-          <button className="bg-[#2F8EFF] text-white w-[50%] ">
-            Apply Coupon{" "}
-          </button>
+        <div className="flex items-center md:w-[40%] w-full coupon">
+          <Input className="!border-black p-1 !border-r-0 !h-[63.5px] " />
+       
+          <Button text="Apply Coupon" className="applyCouponButton !max-h-[49px]" />
         </div>
         <div className="">
           {" "}
-         <button className="bg-[#2F8EFF] text-white py-5 px-10  md:w-auto w-full">Update basket</button>
+       
+         <Button text="Update basket " className="updateBasketButton"/>
         </div>
       </div>
     </>

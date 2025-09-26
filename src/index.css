@@ -3,10 +3,49 @@
 * {
   box-sizing: border-box;
 }
+
+:root {
+  --light: #ffffff;
+  --dark: #000000;
+ 
+  --primary: #2f8eff;
+  --coloredButton: #f1c40f;
+  --primary-gray: #323649;
+  --border-dark: #000000;
+  --required: red;
+}
+
+.placeOrderButton {
+  @apply  !text-white text-lg text-center sm:w-[35%] w-full my-3
+             py-5 items-end;
+}
+.updateBasketButton{
+ @apply px-20
+}
+.returnToBasketButton {
+  @apply !text-[var(--dark)] bg-[var(--light)] !border !border-black }
+
+.applyCouponButton{
+  @apply bg-[var(--primary)] !py-8
+} 
+.productButton{
+  @apply  bg-[var(--primary)]
+}
+.demoButton{
+    @apply  bg-[var(--primary)]  !px-10 md:!w-auto w-full
+}
 body {
   font-family: "Manrope", sans-serif;
 }
-button{
+button {
+  cursor: pointer;
+}
+.profileImg:hover {
+  width: 40px !important;
+  height: 40px !important;
+  cursor: pointer;
+}
+li {
   cursor: pointer;
 }
 
@@ -58,22 +97,42 @@ button{
   border-radius: 0%;
   margin: 0px !important;
 }
+.orderList .ant-table-wrapper table {
+  border-width: 0px !important;
+}
 .ant-table-thead > tr > th {
   background-color: rgb(84, 83, 83) !important;
   border-radius: 0% !important;
   color: white !important;
   font-size: 16px !important
   ;
-   border-width: 1px !important;
+  border-width: 1px !important;
   border-color: #000 !important ;
   border-radius: 0%;
-  margin:  0px !important
+  margin: 0px !important;
 }
-th.ant-table-cell::before{
-  background-color:rgb(84, 83, 83) !important;
+.orderList .ant-table-thead > tr > th {
+  background-color: none !important;
+  border-radius: 0% !important;
+  color: black !important;
+  font-size: 16px !important
+  ;
+  border: 0px !important;
+
+  border-radius: 0%;
+  margin: 0px !important;
 }
-.order .ant-table-cell:first-child{
-    border-right: 2px solid black !important;
+th.ant-table-cell::before {
+  background-color: rgb(84, 83, 83) !important;
+}
+.orderList th.ant-table-cell::before {
+  background-color: white !important;
+}
+.ant-table-thead > tr > th {
+  background-color: rgb(84, 83, 83) !important;
+}
+.orderList .ant-table-thead > tr > th {
+  background-color: white !important;
 }
 
 .ant-table-tbody > tr > td {
@@ -82,38 +141,38 @@ th.ant-table-cell::before{
   text-align: center;
   font-weight: 500 !important;
 }
-
-.order .ant-table-cell{
-  padding: 5px 2px 5px 0px !important;
-
- 
+.orderList .ant-table-tbody > tr > td {
+  border: 0px !important;
+  font-size: 12px !important;
+  text-align: center;
+  font-weight: 500 !important;
 }
-.contactInfo .ant-input-outlined{
+
+.order .ant-table-cell {
+  padding: 5px 2px 5px 0px !important;
+}
+.contactInfo .ant-input-outlined {
   border-radius: 3px;
   height: 50px !important;
-
 }
-.contactInfo .ant-input-outlined:focus-within{
+.contactInfo .ant-input-outlined:focus-within {
   border-color: black !important;
 }
 
 .ant-radio-wrapper {
   align-items: flex-start !important; /* stick radio button to the top */
 }
-.ant-radio-label{
+.ant-radio-label {
   font-size: 16px !important;
 }
 
-.ant-radio-group p{
-  background: #DFDCDE !important;
- 
-
+.ant-radio-group p {
+  background: #dfdcde !important;
 }
-.ant-radio-wrapper{
-display: flex !important;
-
+.ant-radio-wrapper {
+  display: flex !important;
 }
-.ant-radio-label{
+.ant-radio-label {
   width: 100% !important;
   display: flex !important;
   flex-direction: row !important;
@@ -129,14 +188,30 @@ display: flex !important;
   background: var(--gray-prime) !important;
   border: 2px solid black !important;
   height: 45px !important;
- 
+
   border-radius: 0px !important;
 }
 
 .billing .ant-input-outlined {
-height: 45px;
-
+  height: 45px;
 }
-.ant-table-wrapper .ant-table-thead >tr>th{
+.ant-table-wrapper .ant-table-thead > tr > th {
   text-align: center !important;
+}
+.ant-rate-star {
+  color: #f1c40f !important;
+}
+.ant-rate {
+  color: #000 !important;
+}
+:where(.css-dev-only-do-not-override-1odpy5d).ant-slider .ant-slider-track {
+  background-color: black !important;
+  border-radius: 2px;
+}
+.ant-slider-handle-1 {
+  background-color: black !important;
+}
+.ant-slider .ant-slider-handle::after {
+  box-shadow: 0 0 0 2px #000000 !important;
+  outline: none !important;
 }

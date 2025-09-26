@@ -71,7 +71,7 @@ const Navbar = () => {
           </div>
           <div>
             <img
-              className="w-6 h-6"
+              className="w-6 h-6 profileImg"
               src={frame}
               alt=""
               onClick={() => {

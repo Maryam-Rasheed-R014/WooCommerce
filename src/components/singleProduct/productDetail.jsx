@@ -2,6 +2,7 @@ import React from "react";
 import { Icon } from "@iconify/react";
 import product from "../../assets/icons/Layer_1.svg";
 import { useNavigate } from "react-router";
+import Button from "../shared/button";
 export default function ProductDetail() {
     let navigate = useNavigate();
   return (
@@ -17,11 +18,13 @@ export default function ProductDetail() {
         <div className="detail pl-0">
           <h3 className="text-3xl font-bold pl-5">On Sale Product Title</h3>
           <div className="flex pt-1 mt-7 pl-5">
-            <Icon icon="fluent-color:star-28" width="28" height="28" />
-            <Icon icon="fluent-color:star-28" width="28" height="28" />
-            <Icon icon="fluent-color:star-28" width="28" height="28" />
-            <Icon icon="fluent-color:star-28" width="28" height="28" />
-            <Icon icon="fluent-color:star-28" width="28" height="28" />
+           <div className="flex gap-1">
+                          <Icon icon="emojione:star" width="28" height="28" />
+                     <Icon icon="emojione:star" width="28" height="28" />
+                    <Icon icon="emojione:star" width="28" height="28" />
+                        <Icon icon="emojione:star" width="28" height="28" />
+                       <Icon icon="emojione:star" width="28" height="28" />
+                       </div>
             <p className="text-xl ">(4 customer reviews)</p>
           </div>
           <div className="price mt-7 pl-5">
@@ -40,12 +43,11 @@ export default function ProductDetail() {
             </p>
           </div>
           <div className="flex mt-10 gap-3 pl-5 ">
-            <p className="border-2 px-7 text-center flex items-center">1</p>
-            <button className="bg-[#2F8EFF] text-white py-4 px-10 text-2xl"   onClick={() => {
+            <p className="border-2 px-7 !py-0 text-center flex items-center">1</p>
+          
+            <Button text=" Add to Basket" className="productButton !my-0" onClick={() => {
                     navigate("/cart");
-                  }}>
-              Add to basket
-            </button>
+                  }}/>
           </div>
           <hr  className="border-2 text-gray-300 my-5 "/>
           <div className="flex justify-between lg:flex-row flex-col pl-5 gap-2">

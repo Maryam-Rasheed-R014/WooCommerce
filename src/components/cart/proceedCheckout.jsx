@@ -1,5 +1,5 @@
 import React from "react";
-
+import Button from "../shared/button";
 import exampleIcon from "../../assets/icons/Layer_1.svg";
 import { useNavigate } from "react-router";
 
@@ -36,9 +36,9 @@ const ProceedCheckout = () => {
   return (
     <>
       <div className="flex md:flex-row flex-col-reverse  gap-10 my-15">
-        <div>
+        <div className="md:w-[45%] w-full">
           <h3 className="text-3xl font-semibold px-2 pb-5">You may be interested in…</h3>
-          <div className="grid   grid-cols-2">
+          <div className=" grid   sm:grid-cols-2 grid-cols-1">
             {products.map((product) => (
               <div
                 key={product.id}
@@ -62,14 +62,15 @@ const ProceedCheckout = () => {
                   incl VAT
                 </p>
                 <p className="pt-2"> {product.des}</p>
-                <button
+                {/* <button
                   className="my-5 px-4 py-4 bg-[#2F8EFF] text-white w-full hover:bg-blue-600"
                   onClick={() => {
                     navigate("/singleProduct");
                   }}
                 >
                   Add to Cart
-                </button>
+                </button> */}
+                <Button text="Add to Cart" className='productButton'/>
               </div>
             ))}
           </div>
@@ -85,7 +86,7 @@ const ProceedCheckout = () => {
                 <p>R200,00</p>
               </div>
             </div>
-            <div className="flex  flex-col sm:flex-row   gap-5  px-10 border-b-2 py-7 justify-around ">
+            <div className="flex  sm:flex-row   gap-5  px-10 border-b-2 py-7 justify-around ">
            
                 <div className=" md:w-[45%] w-full"><p>Shipping</p></div>
              
@@ -100,7 +101,7 @@ const ProceedCheckout = () => {
                     { value: 3, label: "Flat rate: R50,00" },
                   ]}
                 />
-                <p className="underline text-[#2F8EFF] pl-1 pt-3 font-semibold">
+                <p className="underline text-[var(--primary)] pl-1 pt-3 font-semibold">
                   Change address
                 </p>{" "}
               </div>
@@ -110,9 +111,10 @@ const ProceedCheckout = () => {
              <div className="w-full pl-3"><p>R200,00</p></div> 
             </div>
           </div>
-          <button className=" bg-[#FF7A00] text-white text-xl text-center w-full my-3 py-7"  onClick={() => {
+        {/* -----------------button--------------------- */}
+              <Button icon={''} text="Proceed to checkout" onClick={() => {
                 navigate("/checkout");
-              }}>Proceed to checkout</button>
+              }}/>
         </div>
       </div>
     </>

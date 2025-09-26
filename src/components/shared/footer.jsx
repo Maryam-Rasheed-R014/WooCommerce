@@ -4,6 +4,7 @@ import insta from "../../assets/images/insta.svg"
 import twitter from "../../assets/images/twitter.svg"
 import linkedin from "../../assets/images/linkedin.svg"
 import wifi from "../../assets/images/wifi.svg"
+import Button from "../shared/button";
 export default function Footer() {
   return (
     <>
@@ -18,9 +19,7 @@ export default function Footer() {
                 theme enables agencies to build stylish and sophisticated
                 WordPress websites.
               </p>
-              <button className="text-white bg-[#2F8EFF] py-3 px-5 border-0 outline-none">
-                View Demo
-              </button>
+               <Button text="View Demo "className="demoButton" />
             </div>
           </div>
       <div className="flex justify-start md:justify-center">

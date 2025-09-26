@@ -2,7 +2,7 @@ import React from "react";
 import exampleIcon from "../../assets/icons/Layer_1.svg";
 import ratings from "../../assets/icons/Group Copy.svg";
 import { useNavigate } from "react-router";
-
+import Button from "../shared/button";
 export default function OneSaleProductsRating() {
     let navigate = useNavigate();
   const products = [
@@ -77,7 +77,7 @@ export default function OneSaleProductsRating() {
       <h3 className="pt-4 px-5 font-semibold">
         Product Grid with One Sale Products that have Ratings
       </h3>
-      <div className="grid lg:grid-cols-5 md:grid-cols-4  sm:grid-cols-3 grid-cols-2  px-3">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2  grid-cols-1  px-3">
         {products.map((product) => (
           <div
             key={product.id}
@@ -104,11 +104,14 @@ export default function OneSaleProductsRating() {
           
             </p>
            
-            <button className="my-5 px-4 py-4 bg-[#2F8EFF] text-white w-full hover:bg-blue-600"  onClick={() => {
+            {/* <button className="my-5 px-4 py-4 bg-[#2F8EFF] text-white w-full hover:bg-blue-600"  onClick={() => {
                 navigate("/singleProduct");
               }}>
               Add to basket
-            </button>
+            </button> */}
+              <Button text="Add to basket "className="productButton"  onClick={() => {
+                navigate("/singleProduct");
+              }}/>
           </div>
         ))}
       </div>

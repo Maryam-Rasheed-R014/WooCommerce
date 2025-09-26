@@ -12,14 +12,14 @@ export default function Register() {
               {/*------------email---------------------------  */}
               <h2 className="font-bold text-4xl mb-10">Register</h2>
               <label htmlFor=" " className=" text-small block mb-5">
-                Email address<span className="text-red-600"> *</span>
+                Email address<span className="text-[var(--red)]"> *</span>
               </label>
               <Input type="email" className="h-[4em]" />
       
               {/* -----------password------------------ */}
       
               <label htmlFor=" " className=" text-small block mt-10 mb-5">
-                Password<span className="text-red-600"> *</span>
+                Password<span className="text-[var(--red)]"> *</span>
               </label>
       
               <Input.Password

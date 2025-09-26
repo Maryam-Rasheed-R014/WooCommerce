@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router"; 
 import exampleIcon from "../../assets/icons/Layer_1.svg"; 
-
+import Button from "../shared/button";
 export default function RelatedProducts() {
   const navigate = useNavigate(); 
 
@@ -62,12 +62,10 @@ export default function RelatedProducts() {
 
             <p className="pt-2">{product.des}</p>
 
-            <button
-              className="my-5 px-4 py-2 bg-[#2F8EFF] text-white w-full hover:bg-blue-600"
-              onClick={() => navigate("/singleProduct")}
-            >
-              Add to Cart
-            </button>
+                     
+             <Button text="  Add to Cart" className="productButton " onClick={() => {
+                    navigate("/singleProduct");
+                  }}/> 
           </div>
         ))}
       </div>

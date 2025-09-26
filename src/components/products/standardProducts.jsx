@@ -1,6 +1,7 @@
 import React from "react";
 import exampleIcon from "../../assets/icons/Layer_1.svg";
 import { useNavigate } from "react-router";
+import Button from "../shared/button";
 export default function StandardProducts() {
     let navigate = useNavigate();
   const products = [
@@ -64,10 +65,10 @@ export default function StandardProducts() {
   ];
   return (
     <>
-      <h3 className="pt-10 px-5 font-semibold">
+      <h3 className=" px-5 font-semibold">
         Product Grid with Standard Products only
       </h3>
-      <div className="grid lg:grid-cols-5 md:grid-cols-4  sm:grid-cols-3 grid-cols-2  px-3">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2   grid-cols-1  px-3">
         {products.map((product) => (
           <div
             key={product.id}
@@ -89,12 +90,10 @@ export default function StandardProducts() {
           
             </p>
             <p className="pt-2"> {product.des}</p>
-            <button className="my-5 px-4 py-4 bg-[#2F8EFF] text-white w-full hover:bg-blue-600" 
-             onClick={() => {
+           
+              <Button text="Add to basket "className="productButton"  onClick={() => {
                 navigate("/singleProduct");
-              }}>
-              Add to Cart
-            </button>
+              }}/>
           </div>
         ))}
       </div>
