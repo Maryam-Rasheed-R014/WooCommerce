@@ -42,9 +42,9 @@ const ProceedCheckout = () => {
             {products.map((product) => (
               <div
                 key={product.id}
-                className=" rounded-b-md p-2  text-left bg-white"
+                className=" rounded-b-md p-2  text-left "
               >
-                <div className="bg-black  h flex justify-center ">
+                <div className="bg-[var(--dark)]  h flex justify-center ">
                   {" "}
                   <img
                     src={product.image}

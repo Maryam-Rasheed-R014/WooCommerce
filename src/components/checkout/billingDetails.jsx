@@ -50,12 +50,12 @@ const BillingDetails = () => {
       <h2 className="text-3xl font-semibold">Checkout</h2>
 
       {/* Coupon Section */}
-      <div className="border-2 border-[#2F8EFF] my-3 py-5 pl-3">
+      <div className="border-2 border-[var(--primary)] my-3 py-5 pl-3">
         <Radio.Group>
           <Radio value={1}>
             <div className="text-xl">
               Have a coupon?{" "}
-              <span className="text-[#2F8EFF] underline">
+              <span className="text-[var(--primary)] underline">
                 Click here to enter your code
               </span>
             </div>
@@ -192,7 +192,7 @@ const BillingDetails = () => {
       />
 
       {/* Payment Options */}
-      <div className="w-full py-5 px-4 bg-[#EBE9EB]">
+      <div className="w-full py-5 px-4 bg-[var(--bg-light)]">
         <Radio.Group
           onChange={onChange}
           value={value}
@@ -234,36 +234,33 @@ const BillingDetails = () => {
             )}
           </div>
         </Radio.Group>
-        <hr className=" border-gray-300 mt-5" />
+        <hr className=" border-[var(--border-light)] mt-5" />
         <p className="!text-[12px] my-3 ">
           Your personal data will be used to process your order, support your
           experience throughout this website, and for other purposes described
           in our{" "}
-          <span className="underline text-[#2F8EFF]">privacy policy</span>
+          <span className="underline text-[var(--primary)]">
+            privacy policy
+          </span>
         </p>
         <div className="flex gap-3 items-center">
           <Checkbox className="" />
           <p className="!text-[12px] my-3 ">
             I have read and agree to the website{" "}
-            <span className="underline text-[#2F8EFF]">
+            <span className="underline text-[var(--primary)]">
               terms and conditions
             </span>
           </p>
         </div>
         <div className="flex justify-end my-3">
-          {/* <button
-            className=" bg-[#FF7A00] text-white text-lg text-center sm:w-[30%] w-full my-3
-             py-5 items-end "
+          <Button
+            icon={""}
+            text="Place order"
+            className="placeOrderButton text-[var(--text-light)]"
             onClick={() => {
               navigate("/orderRecieved");
             }}
-          >
-            Place order
-          </button>
-           */}
-              <Button icon={''} text="Place order" className='placeOrderButton text-white'  onClick={() => {
-                navigate("/orderRecieved");
-              }}/>
+          />
         </div>{" "}
       </div>
     </>

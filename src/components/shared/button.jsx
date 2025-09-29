@@ -7,7 +7,7 @@ const Button = (
   return (
     <>
         <button
-            className={` bg-[var(--coloredButton)] text-white text-xl text-center  items-center flex justify-center gap-2 
+            className={` bg-[var(--coloredButton)] text-[var(--light)] text-xl text-center  items-center flex justify-center gap-2 
                   w-full my-3 py-5 
                  ${className}`}
            onClick={onClick}

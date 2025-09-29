@@ -8,7 +8,7 @@ import Button from "../shared/button";
 export default function Footer() {
   return (
     <>
-      <section id="footer" className="bg-[#000000] text-white ">
+      <section id="footer" className="bg-[var(--bg-dark)] text-[var(--light)]  ">
         <div className="container max-w-[85%] mx-auto  grid grid-cols-2 gap-10 sm:grid-cols-2 md:grid-cols-5   py-15  font-manrope  ">
          
          
@@ -59,16 +59,16 @@ export default function Footer() {
             </ul></div>
           </div>
         </div>
-     <hr className="border-t-2 border-gray-300 " />
+     <hr className="border-t-2 border-[var(--border-light)] " />
      <div className="contact container max-w-[85%] mx-auto grid grid-cols-1 gap-3 sm:gap-5 sm:grid-cols-5 py-3">
-      <div className="theme col-span-2"><p className="text-white text-sm">© LSX Theme</p></div>
-      <div className="privicy col-span-2"><p className="text-white text-sm">Privacy Policy-Terms & Conditions</p></div>
+      <div className="theme col-span-2"><p className="text-[var(--light)]  text-sm">© LSX Theme</p></div>
+      <div className="privicy col-span-2"><p className="text-[var(--light)] text-sm">Privacy Policy-Terms & Conditions</p></div>
       <div className="social gap-0 sm:gap-0 space-y-0 grid grid-cols-10 sm:grid-cols-5">
-      <img  className="rounded-full w-[18px] h-[18px]  bg-white border-2"src={facebook} alt="" />
-      <img  className="rounded-full w-[18px] h-[18px]  bg-white border-2"src={insta} alt="" />
-      <img  className="rounded-full w-[18px] h-[18px]  bg-white border-2"src={twitter} alt="" />
-      <img  className="rounded-full w-[18px] h-[18px]  bg-white border-2"src={linkedin} alt="" />
-      <img  className="rounded-full w-[18px] h-[18px]  bg-white border-2"src={wifi} alt="" />
+      <img  className="rounded-full w-[18px] h-[18px]  bg-[var(--bg-light)] border-2"src={facebook} alt="" />
+      <img  className="rounded-full w-[18px] h-[18px]  bg-[var(--bg-light)] border-2"src={insta} alt="" />
+      <img  className="rounded-full w-[18px] h-[18px]  bg-[var(--bg-light)] border-2"src={twitter} alt="" />
+      <img  className="rounded-full w-[18px] h-[18px]  bg-[var(--bg-light)] border-2"src={linkedin} alt="" />
+      <img  className="rounded-full w-[18px] h-[18px]  bg-[var(--bg-light)] border-2"src={wifi} alt="" />
       </div>
      </div>
       </section>   

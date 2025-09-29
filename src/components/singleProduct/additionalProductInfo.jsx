@@ -18,16 +18,16 @@ export default function AdditionalProductInfo() {
         </li>
         <li className="text-xl font-semibold">Reviews (1)</li>
       </ul>
-      <hr className=" border-2 text-gray-300 my-5" />
+      <hr className=" border-2 text-[var(--border-light)] my-5" />
       <div className="md:max-w-[50%] mx-auto px-5">
         <h4 className="font-medium text-3xl my-2">
           2 reviews for Tour Operator Plugin
         </h4>
-        <hr className=" border-2 text-gray-300 my-5" />
+        <hr className=" border-2 text-[var(--border-light)] my-5" />
       </div>
       <div className=" flex md:flex-row flex-col md:gap-15 gap-5 md:max-w-[50%] mx-auto mb-5 px-5">
         <Icon
-          className="border-2 bg-black
+          className="border-2 bg-[var(--bg-black)]
         "
           icon="openmoji:person"
           width="72"
@@ -53,7 +53,7 @@ export default function AdditionalProductInfo() {
             the product, but I can give you an overview of the plugin based on
             its features and user feedback.
           </p>
-          <hr className=" border-2 text-gray-300 my-5" />
+          <hr className=" border-2 text-[var(--border-light)] my-5" />
           <h2 className="text-xl font-medium">Add a review</h2>
           <p>
             Your email address will not be published. Required fields are marked
@@ -72,10 +72,8 @@ export default function AdditionalProductInfo() {
           <p className="text-xl mt-7">
             Your review<span className="text-[var(--required)]">*</span>
           </p>
-          <TextArea className="!h-[200px] !border-black !border-2" />
-          {/* <button className="text-white bg-[#2F8EFF] text-xl font my-5 px-5 py-3">
-            submit
-          </button> */}
+          <TextArea className="!h-[200px] !border-[var(--border-dark)] !border-2" />
+     
           <Button text="Submit" className="productButton"/>
         </div>
       </div>

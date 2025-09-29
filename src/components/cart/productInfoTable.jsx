@@ -76,7 +76,7 @@ const ProductInfoTable = () => {
 
       <div className="flex md:flex-row flex-col p-4 border-2 !border-t-0 justify-between">
         <div className="flex items-center md:w-[40%] w-full coupon">
-          <Input className="!border-black p-1 !border-r-0 !h-[63.5px] " />
+          <Input className="!border-[var(--border-dark)] p-1 !border-r-0 !h-[63.5px] " />
        
           <Button text="Apply Coupon" className="applyCouponButton !max-h-[49px]" />
         </div>

@@ -2,7 +2,7 @@ import { Checkbox, Input } from "antd";
 import React from "react";
 import { useState } from "react";
 import { Radio } from "antd";
-import { Icon } from "@iconify/react";
+
 import exampleIcon from "../../assets/icons/Layer_1.svg";
 import { useNavigate } from "react-router";
 import Button from "../shared/button";
@@ -113,7 +113,7 @@ const ContactInfo = () => {
               >
                 <Radio
                   value={1}
-                  className="w-full border-b  border-gray-300 !pb-3 block"
+                  className="w-full border-b  border-[var(--border-light)]  !pb-3 block"
                 >
                   <div className="flex justify-between w-full">
                     <span className="text-sm">Free shipping</span>
@@ -123,7 +123,7 @@ const ContactInfo = () => {
 
                 <Radio
                   value={2}
-                  className="w-full border-b  border-gray-300 !pb-3 block"
+                  className="w-full border-b   border-[var(--border-light)] !pb-3 block"
                 >
                   <div className="flex justify-between w-full">
                     <span className="text-sm">Local pickup</span>
@@ -133,7 +133,7 @@ const ContactInfo = () => {
 
                 <Radio
                   value={3}
-                  className="w-full border-b  border-gray-300 !pb-3 block"
+                  className="w-full border-b  border-[var(--border-light)]  !pb-3 block"
                 >
                   <div className="flex justify-between w-full">
                     <span className="text-sm">Flat rate</span>
@@ -192,20 +192,20 @@ const ContactInfo = () => {
             </div>
             <p className="text-xl my-5 pb-5">
               By proceeding with your purchase you agree to our{" "}
-              <span className="text-[#2F8EFF] underline font-semibold">
+              <span className="text-[var(--primary)] underline font-semibold">
                 {" "}
                 Terms and Conditions
               </span>{" "}
               and{" "}
-              <span className="text-[#2F8EFF] underline font-semibold">
+              <span className="text-[var(--primary)] underline font-semibold">
                 Privacy Policy
               </span>{" "}
             </p>
-            <div className="flex  flex-col lg:flex-row   justify-between gap-5 border-gray-600 py-5 ">
+            <div className="flex  flex-col lg:flex-row   justify-between gap-5 border-[var(--border-medium)] py-5 ">
              
                 {" "}
             
-                <Button text="Return to Basket" className="returnToBasketButton !text-black" icon="ic:baseline-arrow-back"
+                <Button text="Return to Basket" className="returnToBasketButton !text-[var(--dark)]" icon="ic:baseline-arrow-back"
                 
                 iconClass={' w-[30px] h-[30px]'} 
                   onClick={() => {
@@ -226,15 +226,15 @@ const ContactInfo = () => {
             {products.map((product) => (
               <div
                 key={product.id}
-                className="flex md:flex-row flex-col gap-5 border-t border-gray-300 pb-5 mb-5 pt-3"
+                className="flex md:flex-row flex-col gap-5 border-t border-[var(--border-light)] pb-5 mb-5 pt-3"
               >
                 <div className="relative">
                   <img
-                    className="border-2 bg-black w-[72px] h-[72px] object-cover"
+                    className="border-2 bg-[var(--bg-dark)] w-[72px] h-[72px] object-cover"
                     src={product.image}
                     alt={product.name}
                   />
-                  <span className="absolute -top-2 -left-2 bg-white border border-black w-6 h-6 rounded-full flex items-center justify-center text-sm font-medium">
+                  <span className="absolute -top-2 -left-2 bg-[var(--bg-light)] border border-[var(--border-dark)] w-6 h-6 rounded-full flex items-center justify-center text-sm font-medium">
                     {product.id}
                   </span>
                 </div>
@@ -245,7 +245,7 @@ const ContactInfo = () => {
                     <p className="font-semibold">{product.price}</p>
                   </div>
                   <p className="pt-3">
-                    <span className="text-gray-600 text-small line-through pr-3">
+                    <span className="text-[var(--border-medium)] text-small line-through pr-3">
                       {product.prevprice}
                     </span>{" "}
                     {product.price}
@@ -254,16 +254,16 @@ const ContactInfo = () => {
                 </div>
               </div>
             ))}
-            <div className="border-t border-gray-600">
-              <p className="text-xl text-[#2F8EFF] underline py-5">
+            <div className="border-t border-[var(--border-medium)]">
+              <p className="text-xl text-[var(--primary)] underline py-5">
                 Add a coupon
               </p>
             </div>
-            <div className="flex justify-between py-5 border-t border-gray-600">
+            <div className="flex justify-between py-5 border-t border-[var(--border-medium)]">
               <p className="text-xl">Subtotal</p>
               <p className="text-xl">R150,00</p>
             </div>
-            <div className="flex flex-col py-5 border-t border-gray-600">
+            <div className="flex flex-col py-5 border-t border-[var(--border-medium)]">
               <div className="flex justify-between">
                 <p className="text-xl">Subtotal</p>
                 <p className="text-xl">R150,00</p>
@@ -274,7 +274,7 @@ const ContactInfo = () => {
               </p>
             </div>
 
-            <div className="flex justify-between py-5 border-t border-gray-600">
+            <div className="flex justify-between py-5 border-t border-[var(--border-medium)]">
               <p className="text-2xl font-semibold">Total</p>
               <p className="text-2xl font-semibold">R200,00</p>
             </div>

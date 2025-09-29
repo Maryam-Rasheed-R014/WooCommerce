@@ -44,9 +44,9 @@ export default function RelatedProducts() {
         {products.map((product) => (
           <div
             key={product.id}
-            className="rounded-b-md p-2 text-left bg-white shadow"
+            className="rounded-b-md p-2 text-left bg-[var(--bg-light)] shadow"
           >
-            <div className="bg-black flex justify-center">
+            <div className="bg-[var(--bg-dark)] flex justify-center">
               <img
                 src={product.image}
                 alt={product.name}

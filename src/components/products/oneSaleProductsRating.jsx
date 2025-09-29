@@ -63,14 +63,7 @@ export default function OneSaleProductsRating() {
       image: exampleIcon,
     },
 
-    {
-      id: 8,
-      name: "On Sale Product",
-      price: "R200,00",
-
-      rating: ratings,
-      image: exampleIcon,
-    },
+  
   ];
   return (
     <>
@@ -81,11 +74,11 @@ export default function OneSaleProductsRating() {
         {products.map((product) => (
           <div
             key={product.id}
-            className=" rounded-b-md p-2  text-left bg-white"
+            className=" rounded-b-md p-2  text-left bg-[var(--bg-light)] "
           >
-            <div className="bg-black  h flex justify-center relative">
+            <div className="bg-[var(--bg-dark)]  h flex justify-center relative">
               <div className="absolute top-2 right-2">
-                <p className="bg-white px-2 py-1 rounded-lg text-[12px]">
+                <p className="bg-[var(--bg-light)]  px-2 py-1 rounded-lg text-[12px]">
                   SALE
                 </p>
               </div>
@@ -104,11 +97,7 @@ export default function OneSaleProductsRating() {
           
             </p>
            
-            {/* <button className="my-5 px-4 py-4 bg-[#2F8EFF] text-white w-full hover:bg-blue-600"  onClick={() => {
-                navigate("/singleProduct");
-              }}>
-              Add to basket
-            </button> */}
+          
               <Button text="Add to basket "className="productButton"  onClick={() => {
                 navigate("/singleProduct");
               }}/>

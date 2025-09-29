@@ -71,7 +71,7 @@ export default function Productreview() {
                  <div>
  
                      <div className="flex justify-between py-4 ">
-                     <div className="flex gap-3"><img src={k.avatar} alt=""  className="bg-black  border-3"/>
+                     <div className="flex gap-3"><img src={k.avatar} alt=""  className="bg-[var(--bg-dark)]   border-3"/>
                      <div><h3 className="font-semibold">{k.title}</h3>
                      <p className="pt-3">{k.date}</p></div></div>
                      <div><p className="flex"><Icon icon="fluent-color:star-32" width="32" height="32" />

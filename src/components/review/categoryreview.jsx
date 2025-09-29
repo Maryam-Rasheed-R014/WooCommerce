@@ -69,7 +69,7 @@ export default function Categoryreview() {
           <div>
             <div className="flex justify-between py-4 ">
               <div className="flex gap-3">
-                <img src={k.avatar} alt="" className="bg-black  border-3" />
+                <img src={k.avatar} alt="" className="bg-[var(--bg-dark)]   border-3" />
                 <div>
                   <h3 className="font-semibold">{k.title}</h3>
                   <p className="pt-3">{k.date}</p>

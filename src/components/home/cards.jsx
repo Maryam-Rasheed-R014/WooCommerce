@@ -62,7 +62,7 @@ export default function Cards() {
         {products.map((product) => (
           <div
             key={product.id}
-            className="border-2 rounded-b-md p-2 shadow-md text-center bg-white"
+            className="border-2 rounded-b-md p-2 shadow-md text-center bg-[var(--bg-light)]"
           >
             <img
               src={product.image}
@@ -70,7 +70,7 @@ export default function Cards() {
               className="w-30px   object-cover rounded-md"
             />
             <h3 className="mt-3 text-xl font-semibold">{product.name}</h3>
-            <p className="text-gray-600">{product.price}</p>
+            <p className="text-[var(--border-medium)]">{product.price}</p>
               <Button text="Add to basket "className="productButton"  onClick={() => {
                 navigate("/singleProduct");
               }}/>

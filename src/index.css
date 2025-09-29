@@ -10,11 +10,30 @@
  
   --primary: #2f8eff;
   --coloredButton: #f1c40f;
-  --primary-gray: #323649;
+  --border-buttom:#a7a7a8;
+  --border-medium:#a7a7a8;
+  --border-light:rgb(218, 215, 215) ;
   --border-dark: #000000;
+  --bg-light:#ffffff;
+  --bg-dark:#000000;
   --required: red;
 }
-
+/* ---------------------------------------typography------------------------------------------ */
+h1{
+  font-size: 36px !important;
+}
+h2{
+  font-size: 32px !important;
+}
+h3{
+  font-size: 30px !important;
+}
+p{
+  font-size: 16px !important;
+}
+label{
+  font-size: 20px !important;
+}
 .placeOrderButton {
   @apply  !text-white text-lg text-center sm:w-[35%] w-full my-3
              py-5 items-end;
@@ -33,6 +52,12 @@
 }
 .demoButton{
     @apply  bg-[var(--primary)]  !px-10 md:!w-auto w-full
+}
+.loginButton{
+  @apply bg-[var(--primary)]  
+}
+.registerButton{
+   @apply bg-[var(--primary)]
 }
 body {
   font-family: "Manrope", sans-serif;
@@ -215,3 +240,6 @@ th.ant-table-cell::before {
   box-shadow: 0 0 0 2px #000000 !important;
   outline: none !important;
 }
+
+
+/* hgasghasdvshn */

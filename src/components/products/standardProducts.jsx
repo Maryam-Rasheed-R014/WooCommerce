@@ -33,20 +33,7 @@ export default function StandardProducts() {
       des: "Lorem ipsum dolor sit amet consectetur sociis et.",
       image: exampleIcon,
     },
-    {
-      id: 3,
-      name: "Product Title",
-      price: "R100,00",
-      des: "Lorem ipsum dolor sit amet consectetur sociis et.",
-      image: exampleIcon,
-    },
-    {
-      id: 4,
-      name: "Product Title",
-      price: "R100,00",
-      des: "Lorem ipsum dolor sit amet consectetur sociis et.",
-      image: exampleIcon,
-    },
+   
     {
       id: 5,
       name: "Product Title",
@@ -72,9 +59,9 @@ export default function StandardProducts() {
         {products.map((product) => (
           <div
             key={product.id}
-            className=" rounded-b-md p-2  text-left bg-white"
+            className=" rounded-b-md p-2  text-left bg-[var(--bg-light)] "
           >
-            <div className="bg-black  h flex justify-center ">
+            <div className="bg-[var(--bg-dark)]  h flex justify-center ">
               {" "}
               <img
                 src={product.image}

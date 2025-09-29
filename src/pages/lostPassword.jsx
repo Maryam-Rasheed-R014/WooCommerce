@@ -2,6 +2,7 @@ import React from "react";
 import { Checkbox, Input } from 'antd';
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router";
+import Button from "../components/shared/button";
 
 export default function LostPassword() {
     let navigate = useNavigate();
@@ -22,21 +23,18 @@ export default function LostPassword() {
         </p>
 
         <label htmlFor=" " className=" text-small block my-8">
-          Email address<span className="text-red-600"> *</span>
+          Email address<span className="text-[var(--required)]"> *</span>
         </label>
         <Input type="email" className="h-[4em]" />
           <div className="flex sm:flex-row flex-col justify-between gap-4 my-5">
-                <button 
-                onClick={handleSubmit}
-                className="bg-[#2F8EFF] sm:px-45 w-full px-auto py-3  text-white">
-                  Reset Password
-                </button>
-                 <button 
+             
+                <Button text="Reset Password" className="bg-[var(--primary)]"   onClick={handleSubmit}/>
+                 {/* <button 
                
                 className="bg-[#2F8EFF] sm:px-45 w-full px-auto py-3 hidden text-white">
                   Go to login
                 </button>
-            
+             */}
               </div>
            
       </div>

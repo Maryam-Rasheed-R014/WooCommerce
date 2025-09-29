@@ -38,14 +38,7 @@ export default function OneSaleProducts() {
       des: "Lorem ipsum dolor sit amet consectetur sociis et.",
       image: exampleIcon,
     },
-    {
-      id: 5,
-      name: "On Sale Product",
-      preprice: "R200,00",
-      newprice: "R100,00",
-      des: "Lorem ipsum dolor sit amet consectetur sociis et.",
-      image: exampleIcon,
-    },
+ 
     {
       id: 5,
       name: "Product Title",
@@ -75,11 +68,11 @@ export default function OneSaleProducts() {
         {products.map((product) => (
           <div
             key={product.id}
-            className=" rounded-b-md p-2  text-left bg-white"
+            className=" rounded-b-md p-2  text-left bg-[var(--bg-light)]"
           >
-            <div className="bg-black  h flex justify-center relative">
+            <div className="bg-[var(--bg-dark)]  h flex justify-center relative">
               <div className="absolute top-2 right-2">
-                <p className="bg-white px-2 py-1 rounded-lg text-[12px]">
+                <p className="bg-[var(--bg-light)]  px-2 py-1 rounded-lg text-[12px]">
                   SALE
                 </p>
               </div>
@@ -91,7 +84,7 @@ export default function OneSaleProducts() {
             </div>
             <h3 className="mt-3 pt-2 text-xl  font-semibold">{product.name}</h3>
             <p className="pt-2">
-              <span className="line-through pr-1 text-gray-500">
+              <span className="line-through pr-1 text-[var(--border-medium)]">
                 {product.preprice}
               </span>
               {product.newprice}

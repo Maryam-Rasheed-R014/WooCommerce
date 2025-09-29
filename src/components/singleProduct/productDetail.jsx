@@ -8,7 +8,7 @@ export default function ProductDetail() {
   return (
     <>
       <div className="grid lg:grid-cols-2  grid-cols-1 container mx-auto gap-5 mb-5">
-        <div className="bg-black mb-5 ">
+        <div className="bg-[var(--bg-black)] mb-5 ">
           <img
             src={product}
             alt="product"
@@ -29,7 +29,7 @@ export default function ProductDetail() {
           </div>
           <div className="price mt-7 pl-5">
             <p className="text-2xl">
-              <span className="line-through text-gray-500 pr-5">R250.59</span>
+              <span className="line-through text-[var(--border-medium)] pr-5">R250.59</span>
               R174.95
             </p>
           </div>
@@ -49,14 +49,14 @@ export default function ProductDetail() {
                     navigate("/cart");
                   }}/>
           </div>
-          <hr  className="border-2 text-gray-300 my-5 "/>
+          <hr  className="border-2 text-[var(--border-light)] my-5 "/>
           <div className="flex justify-between lg:flex-row flex-col pl-5 gap-2">
-            <p className="text-small font-semibold">SKU:<span className="text-[#2F8EFF]">product-sku</span> </p>
-            <p className="text-small font-semibold">Categories:<span className="text-[#2F8EFF]"> Product Category</span> </p>
-            <p className="text-small font-semibold">Tag:<span className="text-[#2F8EFF]"> Product Tag</span> </p>
+            <p className="text-small font-semibold">SKU:<span className="text-[var(--primary)]">product-sku</span> </p>
+            <p className="text-small font-semibold">Categories:<span className="text-[var(--primary)]]"> Product Category</span> </p>
+            <p className="text-small font-semibold">Tag:<span className="text-[var(--primary)]"> Product Tag</span> </p>
           </div>
           
-          <hr  className="border-2 text-gray-300 my-5 "/>
+          <hr  className="border-2 text-[var(--border-light)] my-5 "/>
           <div className="sm:flex gap-3 mb-5 pl-5 hidden">
             <Icon icon="material-symbols:share" width="30" height="30" /><span className="ml-2 text-xl">share:</span>
             <Icon className=" border-5 rounded-2xl p-1" icon="streamline-logos:facebook-logo-2-solid" width="30" height="30" />
