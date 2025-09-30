@@ -70,11 +70,11 @@ export default function OneSaleProductsRating() {
       <h3 className="pt-4 px-5 font-semibold">
         Product Grid with One Sale Products that have Ratings
       </h3>
-      <div className="grid lg:grid-cols-3 md:grid-cols-2  grid-cols-1  px-3">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2  grid-cols-1 gap-5 px-3">
         {products.map((product) => (
           <div
             key={product.id}
-            className=" rounded-b-md p-2  text-left bg-[var(--bg-light)] "
+            className=" rounded-b-md p-2  text-left bg-[var(--bg-product)] shadow-lg  "
           >
             <div className="bg-[var(--bg-dark)]  h flex justify-center relative">
               <div className="absolute top-2 right-2">
@@ -88,7 +88,7 @@ export default function OneSaleProductsRating() {
                 className=" py-10 rounded-md "
               />
             </div>
-            <h3 className="mt-3 pt-2 text-xl  font-semibold">{product.name}</h3>
+            <h4 className="mt-3 pt-2 text-xl  font-semibold">{product.name}</h4>
              <img className="pt-2" src={product.rating}/>
             <p className="pt-2">
               <span className=" pr-1 font-semibold te">

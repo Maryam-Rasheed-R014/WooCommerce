@@ -3,12 +3,12 @@ import { Checkbox } from "antd";
 import emptystar from "../../assets/icons/Ratings 20px.svg";
 import fillstar from "../../assets/icons/filled.svg";
 import { Slider } from 'antd';
-export default function Filter() {
-   const [value, setValue] = React.useState([150, 350]);
+export default function Filter( { className }) {
+   const [value, setValue] = React.useState();
 
   return (
     <>
-     <div className="flex  flex-col  border-2 px-5   w-[100%] ">
+     <div className="flex  flex-col  border-2 px-5   w-full ">
           <h3 className=" font-semibold text-4xl  pt-5">Active filters</h3>
           <div className="flex my-7">
             <p className="border-2 py-2 px-3 rounded-4xl ">In stock</p>

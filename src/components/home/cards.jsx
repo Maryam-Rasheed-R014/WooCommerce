@@ -58,7 +58,7 @@ export default function Cards() {
 
   return (
     <>
-      <div className="grid lg:grid-cols-4  md:grid-cols-3  sm:grid-cols-2 grid-cols-1 gap-6 px-3 w-[100%] ">
+      <div className="grid lg:grid-cols-3  md:grid-cols-2  grid-cols-1 gap-6 px-3 w-[100%] ">
         {products.map((product) => (
           <div
             key={product.id}
@@ -69,7 +69,7 @@ export default function Cards() {
               alt={product.name}
               className="w-30px   object-cover rounded-md"
             />
-            <h3 className="mt-3 text-xl font-semibold">{product.name}</h3>
+            <h4 className="mt-3 text-xl font-semibold">{product.name}</h4>
             <p className="text-[var(--border-medium)]">{product.price}</p>
               <Button text="Add to basket "className="productButton"  onClick={() => {
                 navigate("/singleProduct");

@@ -77,7 +77,7 @@ const BillingDetails = () => {
               <Input />
             </div>
             <div className="w-full">
-              <label htmlFor="lastname" className="text-xl block pb-3">
+              <label htmlFor="lastname" type="text" className="text-xl block pb-3">
                 Last name <span className="text-[var(--required)]">*</span>
               </label>
               <Input />
@@ -85,7 +85,7 @@ const BillingDetails = () => {
           </div>
 
           <div className="w-full">
-            <label htmlFor="companyname" className="text-xl block pb-3">
+            <label htmlFor="companyname" type="text" className="text-xl block pb-3">
               Company name (optional)
             </label>
             <Input />
@@ -112,7 +112,7 @@ const BillingDetails = () => {
               Street address <span className="text-[var(--required)]">*</span>
             </label>
             <Input
-              placeholder="House number and street name"
+              placeholder="House number and street name" type="text"
               className="!mb-5"
             />
             <Input placeholder="Apartment, suite, unit, etc." />
@@ -122,7 +122,7 @@ const BillingDetails = () => {
             <label htmlFor="city" className="text-xl block pb-3">
               Town / City<span className="text-[var(--required)]">*</span>
             </label>
-            <Input />
+            <Input  type="text"/>
           </div>
 
           <div className="w-full flex flex-col mt-5">
@@ -142,7 +142,7 @@ const BillingDetails = () => {
 
           <div className="w-full mt-8">
             <label htmlFor="postcode" className="text-xl block pb-3">
-              Postcode / ZIP<span className="text-red-600">*</span>
+              Postcode / ZIP<span className="text-[var(--required)]">*</span>
             </label>
             <Input />
           </div>

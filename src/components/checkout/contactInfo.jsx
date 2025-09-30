@@ -12,12 +12,17 @@ const style = {
   gap: 8,
 };
 const RadioGroup = Radio.Group;
+const RadioGroup2 = Radio.Group;
 
 const ContactInfo = () => {
   let navigate = useNavigate();
   const [value, setValue] = useState(1);
   const onChange = (e) => {
     setValue(e.target.value);
+  };
+    const [payment, setPayment] = useState(1);
+   const onChangeTo = (e) => {
+    setPayment(e.target.value);
   };
   const products = [
     {
@@ -156,11 +161,11 @@ const ContactInfo = () => {
                   gap: 8,
                   width: "100% ",
                 }}
-                onChange={onChange}
-                value={value}
+                onChange={onChangeTo}
+                value={payment}
                 options={[
                   {
-                    value: 1,
+                    value: 4,
                     label: "Direct bank transfer",
                     style: {
                       borderBottom: "1px solid #d1d5db",
@@ -168,7 +173,7 @@ const ContactInfo = () => {
                     },
                   },
                   {
-                    value: 2,
+                    value: 5,
                     label: "Cheque payments",
                     style: {
                       borderBottom: "1px solid #d1d5db",
@@ -176,7 +181,7 @@ const ContactInfo = () => {
                     },
                   },
                   {
-                    value: 3,
+                    value: 6,
                     label: "Cash on delivery",
                     style: {
                       borderBottom: "1px solid #d1d5db",

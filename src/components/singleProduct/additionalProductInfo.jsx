@@ -10,10 +10,10 @@ export default function AdditionalProductInfo() {
   return (
     <>
       <ul className="flex sm:flex-row justify-evenly container mx-auto px-5 sm:pt-15 pt-5">
-        <li className="sm:text-xl text-small font-semibold sm:block hidden  ">
+        <li className="sm:text-xl text-sm font-semibold sm:block hidden  ">
           Description
         </li>
-        <li className="sm:text-xl text-small font-semibold sm:block hidden ">
+        <li className="sm:text-xl text-sm font-semibold sm:block hidden ">
           Additional Details
         </li>
         <li className="text-xl font-semibold">Reviews (1)</li>

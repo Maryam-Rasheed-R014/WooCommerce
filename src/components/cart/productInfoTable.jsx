@@ -1,11 +1,10 @@
-import React from "react";
+import React , {useState} from "react";
 import { Input, Table } from "antd";
 import exapmleImg from "../../assets/icons/Layer_1.svg";
 import { Icon } from "@iconify/react";
 import Button from "../shared/button";
 const ProductInfoTable = () => {
-  const cartdata = [
-    {
+  const [cartdata, setCartData] = useState([ {
       id: 1,
       name: "LSX Mega Menus",
       price: 100,
@@ -29,8 +28,13 @@ const ProductInfoTable = () => {
       subtotal: 900,
       image: exapmleImg,
     },
-  ];
+  ]);
 
+   
+const deleteRow=(id)=>{
+  setCartData(prev=>prev.filter(item=>item.id!=id));
+  
+}
   const columns = [
     {
       title: "Product",
@@ -38,7 +42,7 @@ const ProductInfoTable = () => {
       key: "product",
       render: (text, record) => (
         <div className="flex md:flex-row flex-col items-center md:gap-8 gap-4 my-5 ml-3">
-          <Icon icon="twemoji:cross-mark" width="15" height="15" />
+          <button  onClick={() => deleteRow(record.id)}><Icon icon="twemoji:cross-mark" width="15" height="15" /></button>
           <div>
             <img src={record.image} alt="" className="sm:w-10  w-8 sm:h-10 h-8 bg-black" />
           </div>

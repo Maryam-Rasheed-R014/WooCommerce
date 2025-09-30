@@ -64,11 +64,11 @@ export default function OneSaleProducts() {
       <h3 className="pt-4 px-5 font-semibold">
         Product Grid with One Sale Products
       </h3>
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  px-3">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 px-3">
         {products.map((product) => (
           <div
             key={product.id}
-            className=" rounded-b-md p-2  text-left bg-[var(--bg-light)]"
+            className=" rounded-b-md p-2  text-left bg-[var(--bg-product)] shadow-lg "
           >
             <div className="bg-[var(--bg-dark)]  h flex justify-center relative">
               <div className="absolute top-2 right-2">
@@ -82,7 +82,7 @@ export default function OneSaleProducts() {
                 className=" py-10 rounded-md "
               />
             </div>
-            <h3 className="mt-3 pt-2 text-xl  font-semibold">{product.name}</h3>
+            <h4 className="mt-3 pt-2 text-xl  font-semibold">{product.name}</h4>
             <p className="pt-2">
               <span className="line-through pr-1 text-[var(--border-medium)]">
                 {product.preprice}
@@ -93,7 +93,8 @@ export default function OneSaleProducts() {
            
                <Button text="Add to basket "className="productButton"  onClick={() => {
                 navigate("/singleProduct");
-              }}/>
+              }}
+              />
 
           </div>
         ))}

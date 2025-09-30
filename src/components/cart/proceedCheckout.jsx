@@ -62,14 +62,7 @@ const ProceedCheckout = () => {
                   incl VAT
                 </p>
                 <p className="pt-2"> {product.des}</p>
-                {/* <button
-                  className="my-5 px-4 py-4 bg-[#2F8EFF] text-white w-full hover:bg-blue-600"
-                  onClick={() => {
-                    navigate("/singleProduct");
-                  }}
-                >
-                  Add to Cart
-                </button> */}
+              
                 <Button text="Add to Cart" className='productButton'/>
               </div>
             ))}

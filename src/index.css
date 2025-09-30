@@ -7,7 +7,7 @@
 :root {
   --light: #ffffff;
   --dark: #000000;
- 
+   --featureBg:#323649;
   --primary: #2f8eff;
   --coloredButton: #f1c40f;
   --border-buttom:#a7a7a8;
@@ -17,6 +17,7 @@
   --bg-light:#ffffff;
   --bg-dark:#000000;
   --required: red;
+  --bg-product:#EEEEEE;
 }
 /* ---------------------------------------typography------------------------------------------ */
 h1{
@@ -34,6 +35,9 @@ p{
 label{
   font-size: 20px !important;
 }
+
+
+
 .placeOrderButton {
   @apply  !text-white text-lg text-center sm:w-[35%] w-full my-3
              py-5 items-end;
@@ -73,7 +77,12 @@ button {
 li {
   cursor: pointer;
 }
+a:focus{
+ color:var(--primary)}
 
+
+
+ /* -------------------------------antD components------------------------------ */
 .ant-checkbox-wrapper {
   width: fit-content !important;
 }
@@ -83,8 +92,8 @@ li {
   padding: 0px 0px 0px 10px !important;
 }
 .ant-checkbox-inner {
-  width: 30px !important;
-  height: 30px !important;
+  width: 25px !important;
+  height: 25px !important;
   background: transparent !important;
   border: 2px solid #000 !important;
   border-radius: 10% !important;
@@ -93,9 +102,14 @@ li {
 .ant-checkbox-checked .ant-checkbox-inner {
   background-color: black !important;
   border-color: black !important;
-  color: #000;
+ display: flex;
+ justify-content: center;
+ 
 }
-
+.ant-checkbox-inner::after{
+  margin-left: 2px !important;
+  /* font-size: 20px !important; */
+}
 .ant-checkbox-checked::after {
   border-color: black !important;
 }
@@ -180,7 +194,7 @@ th.ant-table-cell::before {
   border-radius: 3px;
   height: 50px !important;
 }
-.contactInfo .ant-input-outlined:focus-within {
+.ant-input-outlined:focus-within {
   border-color: black !important;
 }
 
@@ -240,6 +254,8 @@ th.ant-table-cell::before {
   box-shadow: 0 0 0 2px #000000 !important;
   outline: none !important;
 }
-
+.ant-slider-rail{
+  background-color: #a7a7a8 !important;
+}
 
 /* hgasghasdvshn */

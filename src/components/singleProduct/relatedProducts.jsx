@@ -44,7 +44,7 @@ export default function RelatedProducts() {
         {products.map((product) => (
           <div
             key={product.id}
-            className="rounded-b-md p-2 text-left bg-[var(--bg-light)] shadow"
+            className="rounded-b-md p-2 text-left bg-[var(--bg-product)] shadow-lg"
           >
             <div className="bg-[var(--bg-dark)] flex justify-center">
               <img
@@ -54,7 +54,7 @@ export default function RelatedProducts() {
               />
             </div>
 
-            <h3 className="mt-3 pt-2 text-xl font-semibold">{product.name}</h3>
+            <h4 className="mt-3 pt-2 text-xl font-semibold">{product.name}</h4>
 
             <p className="pt-2">
               <span className="pr-1 font-semibold">{product.price}</span> incl VAT
@@ -63,9 +63,9 @@ export default function RelatedProducts() {
             <p className="pt-2">{product.des}</p>
 
                      
-             <Button text="  Add to Cart" className="productButton " onClick={() => {
-                    navigate("/singleProduct");
-                  }}/> 
+             <Button text="Add to Cart" className="productButton " onClick={() => {
+                navigate("/singleProduct");
+              }}/> 
           </div>
         ))}
       </div>
