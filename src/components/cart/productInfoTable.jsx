@@ -56,8 +56,8 @@ const deleteRow=(id)=>{
       dataIndex: "quantity",
       key: "quantity",
       render: (text, record) => (
-        <div className="flex items-center ">
-          <div className="px-4 py-2 border-2">{record.quantity}</div>
+        <div className="flex  items-center ">
+          <div className="px-4  mx-auto py-2 border-2">{record.quantity}</div>
         </div>
       ),
     },

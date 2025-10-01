@@ -13,6 +13,8 @@ import Cart from "./pages/cart";
 import Checkout from "./pages/checkout";
 import Billing from "./pages/billing";
 import OrderRecieved from "./pages/orderRecieved";
+import ContactUs from "./pages/contactUs";
+import AdminPanel from "./pages/adminPanel";
 
 function App() {
   return (
@@ -29,8 +31,9 @@ function App() {
         <Route path="/cart" element={<Cart/>} />
         <Route path="/checkout" element={<Checkout/>} />
          <Route path="/billing" element={<Billing/>} />
-         <Route path="/orderRecieved" element={<OrderRecieved/>
-        } />
+         <Route path="/orderRecieved" element={<OrderRecieved/>  } />
+           <Route path="/contactUs" element={<ContactUs/>  } />
+            <Route path="/adminPanel" element={<AdminPanel/>  } />
       </Routes>
       <Footer />
     </BrowserRouter>

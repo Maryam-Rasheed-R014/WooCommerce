@@ -76,6 +76,9 @@ const Navbar = () => {
           <a
             href="#tokenomics"
             className="font-Manrope text-[15px] leading-[15px] tracking-[0.5%] text-center hover:text-[var(--primary)]"
+              onClick={() => {
+                navigate("/contactUs");
+              }}
           >
             Contact
           </a>

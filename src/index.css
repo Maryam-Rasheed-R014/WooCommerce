@@ -129,6 +129,9 @@ a:focus{
 .ant-input-affix-wrapper {
   min-width: 100% !important;
 }
+.contactForm .ant-input-outlined{
+  height: 70px !important;
+}
 .ant-table-wrapper table {
   border-width: 2px !important;
   border-color: #000 !important ;

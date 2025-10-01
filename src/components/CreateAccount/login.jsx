@@ -40,6 +40,7 @@ export default function Login() {
             </Checkbox>
           </div>
         </div>
+        
         <p className="text-[var(--primary)] font-semibold text-xl underline cursor-pointer"   onClick={() => {
                 navigate("/lostPassword");
               }}>
